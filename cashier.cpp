@@ -60,24 +60,30 @@ int main(int argc, const char * argv[]) {
  	cout << endl;
  	*/
 
- 	cout << "Enter the unit price of the book: " << endl;
+ 	cout << "Enter the unit price of the book: ";
  	cin >> unitPrice;
 
- 	// Print the information the user entered
+ 	/*
+ 	// Print the information the user entered (for debugging only)
  	cout << "Date: " << enteredDate << endl;
  	cout << "Quantity: " << quantity << endl;
  	cout << "ISBN: " << inputIsbn << endl;
  	cout << "Title: " << inputTitle << endl;
  	cout << "Price: $" << unitPrice << " per book." << endl;
+	*/
 
+	float subTotal = quantity * unitPrice;
+	float Tax = subTotal * 0.06;
+	float Total = subTotal + Tax;
 
     cout << "\n\t\teBookStore Booksellers\n\n\n";
-    cout << "Date:\n\n";
+    cout << "Date: " << enteredDate << "\n\n";
     cout << "Qty\tISB\t\tTitle\t\t\tPrice\tTotal\n";
-    cout << "-------------------------------------------------------------\n\n\n\n";
-    cout << "\t\tSubtotal\n";
-    cout << "\t\tTax\n";
-    cout << "\t\tTotal\n\n";
+    cout << "-------------------------------------------------------------" << endl;
+    cout << setw(2) << quantity << "   " << setw(14) << inputIsbn << "  " << setw(19) << inputTitle << "           $" << setw(4) << unitPrice << "   $" << setw(4) << subTotal << endl; 
+    cout << "\t\tSubtotal                                    $" << setw(4) << subTotal << endl;
+    cout << "\t\tTax                                         $ " << setw(4) <<  Tax << endl;
+    cout << "\t\tTotal                                       $" << setw(4) << Total << "\n" << endl;
     cout << "Thank You for Shopping at eBookStore!\n";
  
    return 0;
@@ -87,32 +93,24 @@ int main(int argc, const char * argv[]) {
 
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ make cashier
 c++     cashier.cpp   -o cashier
-Joses-MacBook-Pro:eBookStore joseluiscastillo$ ./cashier 
-Enter date of purchase (MM/DD/YYYY): 05/07/2017
-Enter quantity: 10
-Enter ISBN: 43234-412-4
-Enter the title of the book: my life
-Enter the unit price of the book: 
-90.43
-Date: 05/07/2017
-Quantity: 10
-ISBN: 43234-412-4
-Title: my life
-Price: $90.43 per book.
+lJoses-MacBook-Pro:eBookStore joseluiscastillo$ ./cashier 
+Enter date of purchase (MM/DD/YYYY): 05/07/2017 
+Enter quantity: 2
+Enter ISBN: 0-333-90123-8
+Enter the title of the book: History of Scotland
+Enter the unit price of the book: 19.95
 
 		eBookStore Booksellers
 
 
-Date:
+Date: 05/07/2017
 
 Qty	ISB		Title			Price	Total
 -------------------------------------------------------------
-
-
-
-		Subtotal
-		Tax
-		Total
+ 2    0-333-90123-8  History of Scotland           $19.95   $39.9
+		Subtotal                                    $39.9
+		Tax                                         $ 2.394
+		Total                                       $42.294
 
 Thank You for Shopping at eBookStore!
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ 

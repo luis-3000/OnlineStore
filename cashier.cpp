@@ -80,10 +80,10 @@ int main(int argc, const char * argv[]) {
     cout << "Date: " << enteredDate << "\n\n";
     cout << "Qty\tISB\t\tTitle\t\t\tPrice\tTotal\n";
     cout << "-------------------------------------------------------------" << endl;
-    cout << setw(2) << quantity << "   " << setw(14) << inputIsbn << "  " << setw(19) << inputTitle << "           $" << setw(4) << unitPrice << "   $" << setw(4) << subTotal << endl; 
-    cout << "\t\tSubtotal                                    $" << setw(4) << subTotal << endl;
-    cout << "\t\tTax                                         $ " << setw(4) <<  Tax << endl;
-    cout << "\t\tTotal                                       $" << setw(4) << Total << "\n" << endl;
+    cout << setw(4) << quantity << "   " << setw(14) << inputIsbn << "  " << setw(19) << inputTitle << "           $" << setw(6) << std::fixed <<  setprecision(2) << unitPrice << "   $" << setw(6) << std::fixed <<  setprecision(2)  << subTotal << endl; 
+    cout << "\t\t\tSubtotal                               $" << setw(6) << std::fixed <<  setprecision(2)  << subTotal << endl;
+    cout << "\t\t\tTax                                    $" << setw(6) << std::fixed <<  setprecision(2)  <<  Tax << endl;
+    cout << "\t\t\tTotal                                  $" << setw(6) << std::fixed <<  setprecision(2)  << Total << "\n" << endl;
     cout << "Thank You for Shopping at eBookStore!\n";
  
    return 0;
@@ -93,7 +93,7 @@ int main(int argc, const char * argv[]) {
 
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ make cashier
 c++     cashier.cpp   -o cashier
-lJoses-MacBook-Pro:eBookStore joseluiscastillo$ ./cashier 
+Joses-MacBook-Pro:eBookStore joseluiscastillo$ ./cashier 
 Enter date of purchase (MM/DD/YYYY): 05/07/2017 
 Enter quantity: 2
 Enter ISBN: 0-333-90123-8
@@ -107,10 +107,10 @@ Date: 05/07/2017
 
 Qty	ISB		Title			Price	Total
 -------------------------------------------------------------
- 2    0-333-90123-8  History of Scotland           $19.95   $39.9
-		Subtotal                                    $39.9
-		Tax                                         $ 2.394
-		Total                                       $42.294
+   2    0-333-90123-8  History of Scotland           $ 19.95   $ 39.90
+			Subtotal                               $ 39.90
+			Tax                                    $  2.39
+			Total                                  $ 42.29
 
 Thank You for Shopping at eBookStore!
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ 

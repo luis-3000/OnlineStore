@@ -8,7 +8,8 @@
 
 #include <stdio.h>
 #include <iomanip>
-#include "iostream"
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -16,9 +17,11 @@ int main(int argc, const char * argv[]) {
 	char date[11]; //8 date character (MM/DD/YYYY) plus the null terminate character '\0'
  	int quantity;
  	char ISBN[14]; //13 digits plus null terminate character '\0'
+ 	std::string inputTitle;
  	char title[30]; // long enough for a title 
  	float unitPrice;
 
+	/*
  	//Accepting input from users:
  	cout << "Enter date of purchase (MM/DD/YYYY): ";
  	cin >> date;
@@ -30,22 +33,22 @@ int main(int argc, const char * argv[]) {
  	cout << "Enter ISBN: ";
  	cin >> ISBN;
  	string enteredIsbn = ISBN;
+ 	*/
 
  	cout << "Enter the title of the book: ";
- 	cin >> title;
-
+ 	//cin >> inputTitle; // Won't work since it only accepts a word not a line of strings
+ 	//istream& getline(istream& is, string& str, char delim)
+ 	std::getline(std::cin, inputTitle);
  	
  	cout << "Enter the unit price of the book: " << endl;
  	cin >> unitPrice;
- 	//getline(in, unitPrice);
 
-
-
- 	cout << "\nDate: " << enteredDate << endl;
- 	cout << "Quantity: " << quantity << endl;
- 	cout << "ISBN: " << enteredIsbn << endl;
- 	string enteredTitle = title; // convert to string for printing 
- 	cout << "Title: " << enteredTitle << endl;
+ 	// Print the information the user entered
+ //	cout << "\nDate: " << enteredDate << endl;
+ //	cout << "Quantity: " << quantity << endl;
+ //	cout << "ISBN: " << enteredIsbn << endl;
+ 	//string enteredTitle = title; // convert to string for printing 
+ 	std::cout << "Title: " << inputTitle << endl;
  	cout << "Price: $" << unitPrice << " per book." << endl;
 
 

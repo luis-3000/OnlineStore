@@ -78,13 +78,14 @@ int main(int argc, const char * argv[]) {
 
     cout << "\n\t\teBookStore Booksellers\n\n\n";
     cout << "Date: " << enteredDate << "\n\n";
-    cout << "Qty\tISB\t\tTitle\t\t\tPrice\tTotal\n";
-    cout << "-------------------------------------------------------------" << endl;
+    //cout << "Qty\tISB\t\tTitle\t\t\tPrice\tTotal\n";
+    cout << setw(4) << "Qty" << setw(14) << "ISBN" << setw(15) << "Title" << setw(15) << "Price" << setw(15) << "Total" << endl;
+    cout << "----------------------------------------------------------------------------" << endl;
     cout << setprecision(2) << fixed;
-    cout << setw(4) << quantity << "   " << setw(14) << inputIsbn << "  " << setw(19) << inputTitle << "           $" << setw(6) << std::fixed <<  setprecision(2) << unitPrice << "   $" << setw(6) << std::fixed <<  setprecision(2)  << subTotal << endl; 
-    cout << "\t\t\tSubtotal                               $" << setw(6) << std::fixed <<  setprecision(2)  << subTotal << endl;
-    cout << "\t\t\tTax                                    $" << setw(6) << std::fixed <<  setprecision(2)  <<  Tax << endl;
-    cout << "\t\t\tTotal                                  $" << setw(6) << std::fixed <<  setprecision(2)  << Total << "\n" << endl;
+    cout << setw(4) << quantity << setw(14) << inputIsbn << setw(15) << inputTitle << setw(11) << "$" << setw(6) << unitPrice << setw(9) << "$" << setw(6)  << subTotal << "\n" << endl; 
+    cout << setw(35) << "Subtotal" << setw(24) << "$" << setw(6) << subTotal << endl;
+    cout << setw(35) << "Tax" << setw(24) << "$" << setw(7) <<  Tax << endl;
+    cout << setw(35) << "Total" << setw(24) << "$" << setw(6) << Total << "\n" << endl;
     cout << "Thank You for Shopping at eBookStore!\n";
  
    return 0;
@@ -95,23 +96,24 @@ int main(int argc, const char * argv[]) {
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ make cashier
 c++     cashier.cpp   -o cashier
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ ./cashier 
-Enter date of purchase (MM/DD/YYYY): 05/07/2017 
-Enter quantity: 2
-Enter ISBN: 0-333-90123-8
-Enter the title of the book: History of Scotland
-Enter the unit price of the book: 19.95
+Enter date of purchase (MM/DD/YYYY): 05/07/2017
+Enter quantity: 22
+Enter ISBN: 13241-41-41
+Enter the title of the book: My life
+Enter the unit price of the book: 76.67
 
 		eBookStore Booksellers
 
 
 Date: 05/07/2017
 
-Qty	ISB		Title			Price	Total
--------------------------------------------------------------
-   2    0-333-90123-8  History of Scotland           $ 19.95   $ 39.90
-			Subtotal                               $ 39.90
-			Tax                                    $  2.39
-			Total                                  $ 42.29
+ Qty          ISBN          Title          Price          Total
+----------------------------------------------------------------------------
+  22   13241-41-41        My life          $ 76.67        $1686.74
+
+                           Subtotal                       $1686.74
+                                Tax                       $ 101.20
+                              Total                       $1787.94
 
 Thank You for Shopping at eBookStore!
 Joses-MacBook-Pro:eBookStore joseluiscastillo$ 

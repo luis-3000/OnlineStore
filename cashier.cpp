@@ -80,6 +80,7 @@ int main(int argc, const char * argv[]) {
     cout << "Date: " << enteredDate << "\n\n";
     cout << "Qty\tISB\t\tTitle\t\t\tPrice\tTotal\n";
     cout << "-------------------------------------------------------------" << endl;
+    cout << setprecision(2) << fixed;
     cout << setw(4) << quantity << "   " << setw(14) << inputIsbn << "  " << setw(19) << inputTitle << "           $" << setw(6) << std::fixed <<  setprecision(2) << unitPrice << "   $" << setw(6) << std::fixed <<  setprecision(2)  << subTotal << endl; 
     cout << "\t\t\tSubtotal                               $" << setw(6) << std::fixed <<  setprecision(2)  << subTotal << endl;
     cout << "\t\t\tTax                                    $" << setw(6) << std::fixed <<  setprecision(2)  <<  Tax << endl;

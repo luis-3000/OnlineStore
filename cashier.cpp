@@ -78,13 +78,12 @@ int main(int argc, const char * argv[]) {
 
     cout << "\n\t\teBookStore Booksellers\n\n\n";
     cout << "Date: " << enteredDate << "\n\n";
-    //cout << "Qty\tISB\t\tTitle\t\t\tPrice\tTotal\n";
     cout << setw(4) << "Qty" << setw(14) << "ISBN" << setw(15) << "Title" << setw(15) << "Price" << setw(15) << "Total" << endl;
     cout << "----------------------------------------------------------------------------" << endl;
-    cout << setprecision(2) << fixed;
-    cout << setw(4) << quantity << setw(14) << inputIsbn << setw(15) << inputTitle << setw(11) << "$" << setw(6) << unitPrice << setw(9) << "$" << setw(6)  << subTotal << "\n" << endl; 
+    cout << setprecision(2) << showpoint << fixed;
+    cout << setw(4) << quantity << setw(14) << inputIsbn << setw(15) << " " << inputTitle << setw(11) << "$" << setw(6) << unitPrice << setw(9) << "$" << setw(6)  << subTotal << "\n" << endl; 
     cout << setw(35) << "Subtotal" << setw(24) << "$" << setw(6) << subTotal << endl;
-    cout << setw(35) << "Tax" << setw(24) << "$" << setw(7) <<  Tax << endl;
+    cout << setw(35) << "Tax" << setw(24) << "$" << setw(6) <<  Tax << endl;
     cout << setw(35) << "Total" << setw(24) << "$" << setw(6) << Total << "\n" << endl;
     cout << "Thank You for Shopping at eBookStore!\n";
  

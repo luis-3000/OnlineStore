@@ -12,8 +12,9 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-   int choice;
-   cout << "eBookStore Booksellers\n";
+
+   int choice = 0;
+   cout << "\n  eBookStore Booksellers\n";
    cout << "        Main Menu\n\n";
    cout << "1. Cashier Module.\n";
    cout << "2. Inventory Database Module.\n";
@@ -21,9 +22,23 @@ int main(int argc, const char * argv[]) {
    cout << "4. Exit.\n\n";
    cout << "Enter Your Choice: ";
    cin >> choice;
+   //Take appropriate actions
+   switch(choice)
+   {
+      case 1: cout << "You entered 1.\n";
+      break;
+      case 2: cout << "You entered 2.\n";
+      break;
+      case 3: cout << "You entered 3.\n";
+      break;
+      case 4: cout << "You entered 4.\n";
+      break;
+      default: cout << "\nPlease enter a number in the range 1-4.\n\n";
+      break;
+   }
 
    do {
-   		   cout << "eBookStore Booksellers\n";
+   		cout << "  eBookStore Booksellers\n";
 		   cout << "        Main Menu\n\n";
 		   cout << "1. Cashier Module.\n";
 		   cout << "2. Inventory Database Module.\n";
@@ -31,7 +46,21 @@ int main(int argc, const char * argv[]) {
 		   cout << "4. Exit.\n\n";
 		   cout << "Enter Your Choice: ";
 		   cin >> choice;
-   } while (choice != 1 || choice != 2 || choice != 3 || choice != 4);
+         //Take appropriate actions
+         switch(choice)
+         {
+            case 1: cout << "You entered 1.\n";
+            break;
+            case 2: cout << "You entered 2.\n";
+            break;
+            case 3: cout << "You entered 3.\n";
+            break;
+            case 4: cout << "You entered 4.\n";
+            break;
+            default: cout << "\nPlease enter a number in the range 1-4.\n\n";
+            break;
+         }
+   } while (choice != 4);
 
    return 0;
 }

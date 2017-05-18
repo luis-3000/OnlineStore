@@ -25,13 +25,13 @@ int main(int argc, const char * argv[]) {
    //Take appropriate actions
    switch(choice)
    {
-      case 1: cout << "You entered 1.\n";
+      case 1: cout << "You selected item  1.\n";
       break;
-      case 2: cout << "You entered 2.\n";
+      case 2: cout << "You selected item  2.\n";
       break;
-      case 3: cout << "You entered 3.\n";
+      case 3: cout << "You selected item  3.\n";
       break;
-      case 4: cout << "You entered 4.\n";
+      case 4: cout << "You selected item  4.\n";
       break;
       default: cout << "\nPlease enter a number in the range 1-4.\n\n";
       break;
@@ -49,13 +49,13 @@ int main(int argc, const char * argv[]) {
          //Take appropriate actions
          switch(choice)
          {
-            case 1: cout << "You entered 1.\n";
+            case 1: cout << "You selected item  1.\n";
             break;
-            case 2: cout << "You entered 2.\n";
+            case 2: cout << "You selected item  2.\n";
             break;
-            case 3: cout << "You entered 3.\n";
+            case 3: cout << "You selected item  3.\n";
             break;
-            case 4: cout << "You entered 4.\n";
+            case 4: cout << "You selected item  4.\n";
             break;
             default: cout << "\nPlease enter a number in the range 1-4.\n\n";
             break;

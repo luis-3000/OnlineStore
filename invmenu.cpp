@@ -66,7 +66,7 @@ int main(int argc, const char * argv[]) {
             default: cout << "\nPlease enter a number in the range 1-4.\n\n";
             break;
          }
-   } while (choice != 1 || choice != 2 || choice != 3 || choice != 4 || choice != 5);
+   } while (choice != 5);
 
    return 0;
 }

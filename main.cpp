@@ -73,7 +73,5 @@ int main(int argc, const char * argv[]) {
     cout << "Here you will find all the electronic books you need.\n";
 
     
-
-    
     return 0;
 }

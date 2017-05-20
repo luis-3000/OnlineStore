@@ -1,0 +1,2 @@
+// Funtion prototypes
+void cashier();

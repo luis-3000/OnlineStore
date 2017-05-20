@@ -10,7 +10,8 @@
 
 #include "iostream"
 using namespace std;
-int main(int argc, const char * argv[]) {
+
+void invmenu() {
 //int inventory(int choice) {
    int choice;
    cout << "\neBookStore Booksellers\n";

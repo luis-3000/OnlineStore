@@ -13,7 +13,7 @@
 #include <algorithm>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+void cashier() {
 
 	const int DATE_SIZE = 11;
 	char date[DATE_SIZE]; //8 date character (MM/DD/YYYY) plus the null terminate character '\0'
@@ -99,7 +99,7 @@ int main(int argc, const char * argv[]) {
   
   } while (anotherTransaction != "no");
 
-  return 0;
+  
 }
 
 /* SAMPLE RUN OUTPUT SO FAR

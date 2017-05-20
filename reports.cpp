@@ -7,7 +7,7 @@
 #include "iostream"
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+void reports() {
    int choice;
    cout << "\n\teBookStore Booksellers\n";
    cout << "\t\tReports\n\n";

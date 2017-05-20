@@ -3,8 +3,8 @@
 // Date: 02/03/2017
 
 #include <stdio.h>
-#include <bookinfo.h>
-#include "iostream"
+#include "bookinfo.h"
+#include <iostream>
 using namespace std;
 
 void bookInfo () {
@@ -20,5 +20,4 @@ void bookInfo () {
    cout << "Wholesale Cost:\n";
    cout << "Retail Price:\n";
 
-   return 0;
 }

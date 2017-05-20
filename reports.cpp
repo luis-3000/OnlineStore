@@ -3,8 +3,8 @@
 // Date: 02/03/2017
 
 #include <stdio.h>
-#include <bookinfo.h>
-#include "iostream"
+#include "reports.h"
+#include <iostream>
 using namespace std;
 
 void reports() {
@@ -77,5 +77,4 @@ void reports() {
          }
    } while (choice != 7);
 
-   return 0;
 }

@@ -7,8 +7,11 @@
 //
 
 #include <stdio.h>
-
-#include "iostream"
+#include "cashier.cpp"
+#include "bookinfo.cpp"
+#include "invmenu.cpp"
+#include "reports.cpp"
+#include <iostream>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -25,13 +28,13 @@ int main(int argc, const char * argv[]) {
    //Take appropriate actions
    switch(choice)
    {
-      case 1: cout << "You selected item  1.\n";
+      case 1: cashier(); //cout << "You selected item  1.\n";
       break;
-      case 2: cout << "You selected item  2.\n";
+      case 2: invmenu(); //cout << "You selected item  2.\n";
       break;
-      case 3: cout << "You selected item  3.\n";
+      case 3: reports(); //cout << "You selected item  3.\n";
       break;
-      case 4: cout << "You selected item  4.\n";
+      case 4: cout << "Exiting now ... "; //"You selected item  4.\n";
       break;
       default: cout << "\nPlease enter a number in the range 1-4.\n\n";
       break;

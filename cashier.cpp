@@ -11,7 +11,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include <cashier.h>
+#include "cashier.h"
 using namespace std;
 
 void cashier() {

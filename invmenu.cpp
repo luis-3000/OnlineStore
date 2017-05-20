@@ -7,8 +7,8 @@
 //
 
 #include <stdio.h>
-#include <invmenu.h>
-#include "iostream"
+#include "invmenu.h"
+#include <iostream>
 using namespace std;
 
 void invmenu() {
@@ -69,5 +69,5 @@ void invmenu() {
          }
    } while (choice != 5);
 
-   return 0;
+
 }

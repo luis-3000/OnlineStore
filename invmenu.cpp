@@ -11,6 +11,23 @@
 #include <iostream>
 using namespace std;
 
+// Stub functions
+void lookUpBook() {
+   cout << "Looking up your book now ... " << endl;
+}
+
+void addBook() {
+   cout << "Adding the book you selected to your cart ... " << endl;
+}
+
+void editBook() {
+   cout << "You can now edit the book you selected: " << endl;
+}
+
+void deleteBook() {
+   cout << "Deleting the book from your cart ... " << endl;
+}
+
 void invmenu() {
 //int inventory(int choice) {
    int choice;
@@ -71,3 +88,4 @@ void invmenu() {
 
 
 }
+

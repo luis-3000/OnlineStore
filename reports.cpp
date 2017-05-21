@@ -7,6 +7,31 @@
 #include <iostream>
 using namespace std;
 
+//stub functions
+void repListing() {
+   cout << "You selected Inventory Listing.";
+}
+
+void repWholesale() {
+   cout << "You selected Inventory Wholesale Value.";
+}
+
+void repRetail() {
+   cout << "You selected Inventory Retail Value.";
+}
+
+void repQty() {
+   cou << "You selected Listing By Quantity.";
+}
+
+void repCost() {
+   cout << "You selected Listing By Cost.";
+}
+
+void repAge() {
+   cout << "You selected Listing By Age.";
+}
+
 void reports() {
    int choice;
    cout << "\n\teBookStore Booksellers\n";

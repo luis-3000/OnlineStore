@@ -32,6 +32,18 @@ void deleteBook() {
 void invmenu() {
 //int main() {
 //int inventory(int choice) {
+
+   // To hold books data
+   char bookTitle[20][51];
+   char isbn[20][14];
+   char author[20][31];
+   char publisher[20][31];
+   char dateAdded[20][11];
+   int qtyOnHand[];
+   double wholesale[];
+   double retail[];
+
+
    int choice;
 
    do {
@@ -62,6 +74,6 @@ void invmenu() {
          }
    } while (choice != 5);
 
-   return 0;
+   //return 0;
 }
 

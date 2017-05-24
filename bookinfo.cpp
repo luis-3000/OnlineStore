@@ -10,28 +10,28 @@
 using namespace std;
 
 //Function prototypes
-int main();
+//int main();
 void bookInfo(char [], char [], char [], char[], char[], int , double, double);
 void display(char [], int);
 
-int main() {
-   char isbn[14] = {'1', '2', '3', '-', '5', '6', '7', '-', '9', '0', '1', '2', '3', '4'};
-   char bookTitle[51] = {'L', 'i', 'f', 'e'};
-   char author[31] = {'T', 'h', 'e', ' ', 'a', 'u', 't', 'h', 'o', 'r'};
-   char publisher[31] = {'O', '\'', 'R', 'a', 'i', 'l', 'l', 'y'};
-   char date[11] = {'0', '5', '/', '2', '3', '/', '2','0', '1', '7'};
-   int quantity = 21;
-   double wholesale = 19.65;
-   double retail = 20.00;
+// int main() {
+//    char isbn[14] = {'1', '2', '3', '-', '5', '6', '7', '-', '9', '0', '1', '2', '3', '4'};
+//    char bookTitle[51] = {'L', 'i', 'f', 'e'};
+//    char author[31] = {'T', 'h', 'e', ' ', 'a', 'u', 't', 'h', 'o', 'r'};
+//    char publisher[31] = {'O', '\'', 'R', 'a', 'i', 'l', 'l', 'y'};
+//    char date[11] = {'0', '5', '/', '2', '3', '/', '2','0', '1', '7'};
+//    int quantity = 21;
+//    double wholesale = 19.65;
+//    double retail = 20.00;
 
-   bookInfo(isbn, bookTitle, author, publisher, date, quantity, wholesale, retail);
-   // char a[3] = {'a', ' ', 'c'};
-   // for(int i = 0; i < 3; i++) {
-   //    cout << a[i];
-   // }
-   // cout << endl;
-   return 0;
-}
+//    bookInfo(isbn, bookTitle, author, publisher, date, quantity, wholesale, retail);
+//    // char a[3] = {'a', ' ', 'c'};
+//    // for(int i = 0; i < 3; i++) {
+//    //    cout << a[i];
+//    // }
+//    // cout << endl;
+//    return 0;
+// }
 
 void bookInfo (char _isbn[14], char _bookTitle[51], char _author[31], char _publisher[31], 
                                char _date[11], int _qty, double _wholesale, double _retail) {

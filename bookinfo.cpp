@@ -55,3 +55,21 @@ void display(char containerToDisplay[], int size) {
       cout << containerToDisplay[i];
    }
 }
+
+/* SAMPLE RUN
+Joses-MacBook-Pro:eBookStore joseluiscastillo$ g++ bookinfo.cpp -o bookinfo
+Joses-MacBook-Pro:eBookStore joseluiscastillo$ ./bookinfo 
+
+      eBookStore Booksellers
+         Book Information
+
+ISBN: 123-567-901234
+Title: Life
+Author: The author
+Publisher: O'Railly
+Date Added: 05/23/2017
+Quantity-On-Hand: 21
+Wholesale Cost: 19.65
+Retail Price: 20.00
+Joses-MacBook-Pro:eBookStore joseluiscastillo$
+*/

@@ -11,13 +11,46 @@
 #include <iostream>
 using namespace std;
 
+// Global variables to hold books' data
+   char bookTitle[20][51];
+   char isbn[20][14];
+   char author[20][31];
+   char publisher[20][31];
+   char dateAdded[20][11];
+   int qtyOnHand[20];
+   double wholesale[20];
+   double retail[20];
+
 // Stub functions
 void lookUpBook() {
    cout << "Looking up your book now ... " << endl;
 }
 
-void addBook() {
-   cout << "Adding the book you selected to your cart ... " << endl;
+void addBook(string _title, string _author, string _publisher, string _dateAdded,
+                     int _qtyOnHand, double _wholesage, double _retail) {
+   //cout << "Adding the book you selected to your cart ... " << endl;
+   //cout << "The size of bookTitle array is: " 
+   //      << sizeof(bookTitle)/sizeof(bookTitle[0]);
+   int size = sizeof(bookTitle)/sizeof(bookTitle[0]);
+   for(int i = 0; i < bookTitle.size; i++) {
+      if(bookTitle[i] == 0 || bookTitle[i] == '\0') { // If empty spot
+         // Add the title at this empty index.
+         bookTitle[i] = _title;
+         // Also add all other pertinent data at the same index for the
+         // other arrays that will hold data for this book
+         isbn[i] = _isbn;
+         author[i] = _author;
+         publisher[i] = _publisher;
+         dateAdded[i] = _dateAdded;
+         qtyOnHand[i] = _qtyOnHand;
+         wholesale[i] = _wholesage;
+         retail[i] = _retail;
+      }
+      if(i == size) { // full array, cannot store Database
+         cout << "No more books can be added to the inventory. Sorry!\n";
+         return;
+      }
+   }
 }
 
 void editBook() {
@@ -29,20 +62,8 @@ void deleteBook() {
 }
 
 
-void invmenu() {
-//int main() {
-//int inventory(int choice) {
-
-   // To hold books data
-   char bookTitle[20][51];
-   char isbn[20][14];
-   char author[20][31];
-   char publisher[20][31];
-   char dateAdded[20][11];
-   int qtyOnHand[];
-   double wholesale[];
-   double retail[];
-
+//void invmenu() {
+int main() {
 
    int choice;
 

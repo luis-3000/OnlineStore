@@ -69,9 +69,8 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 
-    std::cout << "Welcome to the eBookStore!\n";
-    cout << "Here you will find all the electronic books you need.\n";
-
+    std::cout << "Welcome to the OnlineStore!\n";
+    cout << "Here you will find all the items and books you need.\n";
     
     return 0;
 }

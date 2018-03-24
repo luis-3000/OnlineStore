@@ -33,8 +33,7 @@ void display(char [], int);
 //    return 0;
 // }
 
-void bookInfo (char _isbn[14], char _bookTitle[51], char _author[31], char _publisher[31], 
-                               char _date[11], int _qty, double _wholesale, double _retail) {
+void bookInfo (char _isbn[14], char _bookTitle[51], char _author[31], char _publisher[31],  char _date[11], int _qty, double _wholesale, double _retail) {
 
    cout << "\n\t\teBookStore Booksellers\n";
    cout << "\t\t   Book Information\n\n";
@@ -57,19 +56,19 @@ void display(char containerToDisplay[], int size) {
 }
 
 /* SAMPLE RUN
-Joses-MacBook-Pro:eBookStore joseluiscastillo$ g++ bookinfo.cpp -o bookinfo
-Joses-MacBook-Pro:eBookStore joseluiscastillo$ ./bookinfo 
+   Joses-MacBook-Pro:eBookStore joseluiscastillo$ g++ bookinfo.cpp -o bookinfo
+   Joses-MacBook-Pro:eBookStore joseluiscastillo$ ./bookinfo 
 
-      eBookStore Booksellers
-         Book Information
+         eBookStore Booksellers
+            Book Information
 
-ISBN: 123-567-901234
-Title: Life
-Author: The author
-Publisher: O'Railly
-Date Added: 05/23/2017
-Quantity-On-Hand: 21
-Wholesale Cost: 19.65
-Retail Price: 20.00
-Joses-MacBook-Pro:eBookStore joseluiscastillo$
+   ISBN: 123-567-901234
+   Title: Life
+   Author: The author
+   Publisher: O'Railly
+   Date Added: 05/23/2017
+   Quantity-On-Hand: 21
+   Wholesale Cost: 19.65
+   Retail Price: 20.00
+   Joses-MacBook-Pro:eBookStore joseluiscastillo$
 */

@@ -17,7 +17,7 @@ using namespace std;
 int main(int argc, const char * argv[]) {
 
    int choice = 0;
-   cout << "\n  eBookStore Booksellers\n";
+   cout << "\n     OnlineStore\n";
    cout << "        Main Menu\n\n";
    cout << "1. Cashier Module.\n";
    cout << "2. Inventory Database Module.\n";
@@ -41,7 +41,7 @@ int main(int argc, const char * argv[]) {
    }
 
    do {
-   		cout << "  eBookStore Booksellers\n";
+   		cout << "       OnlineStore\n";
 		   cout << "        Main Menu\n\n";
 		   cout << "1. Cashier Module.\n";
 		   cout << "2. Inventory Database Module.\n";

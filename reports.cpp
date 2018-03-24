@@ -38,7 +38,7 @@ void reports() {
    int choice;
 
    do {
-         cout << "\n\teBookStore Booksellers\n";
+         cout << "\n\t    OnlineStore    \n";
          cout << "\t\tReports\n\n";
          cout << "1. Inventory Listing\n";
          cout << "2. Inventory Wholesale Value\n";
